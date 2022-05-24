@@ -43,7 +43,7 @@ float64 y
 - [Image](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Image.html)
 
 ```shell
-ROS Image message provded under sensor_msgs
+ROS Image message provided under sensor_msgs
 ```
 
 ## Topic Reference
