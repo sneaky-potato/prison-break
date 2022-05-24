@@ -8,7 +8,7 @@ import numpy as np
 import os
 
 """
-An template file
+A template file
 You may choose not to follow this template as well
 Design your strategy and keep a note of used matches too
 Publish the path in the end
