@@ -6,16 +6,28 @@ Repository for the task round of ARK fresher selections 2022
 
 Please make sure you've read and understood the problem statement before tinkering.
 
+## Rules
+
+- Start from the starting position on the maze
+
+- You are not allowed to use the global origin information for solving task
+
+- You can only make your next move using the information from the snapshot returned and nothing else
+
+- You are not allowed to light up an area which does not lie in the vicinity of your current / visited location
+
 ## Installing / Getting started
 
 A quick introduction of the minimal setup you need to get the package compiled and ready for the task
 
 ```shell
 cd ~/catkin_ws/src
-git clone https://github.com/sneaky-potato/prison-break.git
+git clone https://github.com/sneaky-potato/prison-break.git prison
 catkin clean -y
-catkin build prison-break
+catkin build prison
 ```
+
+If you run into build issues, make sure the name of the package is consistent everywhere i.e. ```CMakeLists.txt```, ```package.xml``` and directory name (supposed to be **prison**)
 
 ## Scripts
 
@@ -39,6 +51,8 @@ float64 x
 float64 y
 ```
 
+Note: ```Postion.x``` is measured against the vertical axis and ```Position.y``` against the horizontal axis
+
 - [Image](http://docs.ros.org/en/melodic/api/sensor_msgs/html/msg/Image.html)
 
 ```shell
@@ -51,7 +65,7 @@ There are mainly 2 topics used for communicating data-
 
 - /match_light
 
->Publish your coordinates (in [Position.msg](https://github.com/sneaky-potato/prison-break/blob/master/msg/Position.msg)) to this topic
+>Publish your coordinates ([Position.msg](https://github.com/sneaky-potato/prison-break/blob/master/msg/Position.msg)) to this topic
 
 - /snap_return
 
@@ -67,5 +81,5 @@ roscore
 cd ~/catkin_ws
 chmod +x src/prison-break/src/scripts/main.py
 source devel/setup.bash
-rosrun prison-break main.py
+rosrun prison main.py
 ```
