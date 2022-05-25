@@ -39,7 +39,7 @@ class Prison():
                         cv2.circle(black,(data.y,data.x),self.radius, (255, 255, 255), thickness=cv2.FILLED)
 
                         cv_image = cv2.cvtColor(cv2.bitwise_and(newimg, black),cv2.COLOR_GRAY2BGR)
-                        cv_image = cv_image[data.x - RADIUS // 2 : data.x + RADIUS // 2, data.y - RADIUS // 2 : data.y + RADIUS // 2]
+                        cv_image = cv_image[data.x - RADIUS: data.x + RADIUS, data.y - RADIUS: data.y + RADIUS]
                         image_message = self.bridge.cv2_to_imgmsg(cv_image, encoding="passthrough")
                         self.pub.publish(image_message)
                         rospy.loginfo(rospy.get_caller_id() + "Snap published")
