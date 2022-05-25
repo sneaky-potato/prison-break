@@ -6,8 +6,7 @@ Please make sure you've read and understood the problem statement before tinkeri
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+A quick introduction of the minimal setup you need to get the package compiled and ready for the task
 
 ```shell
 cd ~/catkin_ws/src
@@ -15,8 +14,6 @@ git clone https://github.com/sneaky-potato/prison-break.git
 catkin clean -y
 catkin build prison-break
 ```
-
-Above commands should get you read by compiling and building the package
 
 ## Scripts
 
