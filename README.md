@@ -1,8 +1,10 @@
 # Prison-Break &middot;
 
-> Repository for the task round of ARK fresher selections 2022
+>Trapped within a dark labyrinth with nothing but a matchbox in my left pocket, a fistful supply of sticks inside it, unbeknown to the future ahead, I kept wondering about what led to this unfortunate event.
 
-Please make sure you've read and understood the problem statement before tinkering
+Repository for the task round of ARK fresher selections 2022
+
+Please make sure you've read and understood the problem statement before tinkering.
 
 ## Installing / Getting started
 
