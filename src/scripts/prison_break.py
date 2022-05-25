@@ -44,8 +44,8 @@ def send():
 
     r = rospy.Rate(0.1)
     msg = Position()
-    msg.x = 10
-    msg.y = 10
+    msg.x = 10 # Vertical
+    msg.y = 10 # Horizontal
   
     while not rospy.is_shutdown():
         hello_str = "hello world %s" % rospy.get_time()
